@@ -45,8 +45,13 @@ body:
     label: Vehicle
     description: Select the vehicle with the issue.
     options:
-      - Station 1
-      - Station 2
+      - Rescue 1 (station 2)
+      - Engine 1 (station 1)
+      - Engine 2 (station 1)
+      - Engine 3 (station 2)
+      - Engine 4 (station 2)
+      - Emergency Response Trailer (station 2)
+      - QRV
   validations:
     required: true
 

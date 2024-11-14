@@ -1,7 +1,7 @@
-name: Facility/Maintenance Work Request
+name: Station Maintenance Work Request
 description: Report and track facility issues/maintenance.
-title: "[Facility/Maintenance] <Brief description of the issue>"
-labels: ["maintenance", "facility"]
+title: "[Station] <Brief description of the issue>"
+labels: ["maintenance", "station"]
 
 body:
 
