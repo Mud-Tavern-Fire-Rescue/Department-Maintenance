@@ -1,7 +1,7 @@
-name: Facility/Maintenance Work Request
-description: Report and track facility issues/maintenance.
-title: "[Facility/Maintenance] <Brief description of the issue>"
-labels: ["maintenance", "facility"]
+name: Vehicle Maintenance Work Request
+description: Report and track issues/maintenance work for department vehicles.
+title: "[Vehicle] <Brief description of the issue>"
+labels: ["maintenance", "vehicle"]
 
 body:
 
@@ -14,7 +14,7 @@ body:
   id: requester-name
   attributes:
     label: Requester Name
-    description: Your full name
+    description: Your name
   validations:
     required: true
 
@@ -40,14 +40,13 @@ body:
     required: true
 
 - type: dropdown
-  id: building
+  id: vehicle
   attributes:
-    label: Station
-    description: Select the station where the issue is.
+    label: Vehicle
+    description: Select the vehicle with the issue.
     options:
       - Station 1
       - Station 2
-      - Both
   validations:
     required: true
 
@@ -57,27 +56,27 @@ body:
     label: Type of Request
     description: What kind of work is needed?
     options:
-      - General Maintenance
-      - Infrastructure (plumbing, electrical, HVAC)
-      - Technology (computers, internet, station radio)
-      - Consumables purchase request (paper towel, soap, etc)
-      - Doors & Bay Doors
-      - Exterior
-      - Cleaning/Recurring (mowing, etc)
+      - Vehicle Engine/Handling (steering, wheels, etc)
+      - Lights, Sirens, Horns
+      - Radio/Communications
+      - Engine Pump
+      - Firefighting Equipment (hoses, SCBAs, etc)
+      - Rescue/Extrication Equipment
+      - Vehicle Equipment (lights, tools, misc.)
       - Other
   validations:
     required: true
 
 - type: input
-  id: room
+  id: location
   attributes:
     label: Specific location
-    description: Where exactly is the issue? (small bathroom, engine bay, kitchen, etc)
+    description: Where exactly is the issue? (compartment 5, rear seat, passenger side door, etc)
 
 - type: input
   id: parts
   attributes:
-    label: Will materials need to be bought?
+    label: Will parts need to be bought?
     description: If so, include a rough estimate as to the cost to the department if you know. 
 
 - type: textarea
@@ -93,4 +92,3 @@ body:
   attributes:
     label: Supporting Pictures or Documents (optional)
     description: Links to photos, videos, or other files. This can also be inserted after the issue is created. 
-
