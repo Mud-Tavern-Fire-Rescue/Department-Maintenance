@@ -1,0 +1,87 @@
+name: Facility/Maintenance Work Request
+description: Report issues or request maintenance work within the facility.
+title: "[Facility/Maintenance] <Brief description of the issue>"
+labels: ["maintenance", "facility"]
+
+body:
+
+- type: markdown
+  attributes:
+    value: |
+      Thank you for submitting a maintenance request. Please fill out the details below to help us address your issue promptly.
+
+- type: input
+  id: requester-name
+  attributes:
+    label: Requester Name
+    description: Your full name
+  validations:
+    required: true
+
+- type: input
+  id: contact-information
+  attributes:
+    label: Contact Information (Phone/Email)
+    description: How can we best reach you?
+  validations:
+    required: true
+
+- type: dropdown
+  id: priority
+  attributes:
+    label: Priority Level
+    description: How urgent is this issue?
+    options:
+      - Low
+      - Medium
+      - High
+      - Urgent
+  validations:
+    required: true
+
+- type: dropdown
+  id: request-type
+  attributes:
+    label: Type of Request
+    description: What kind of work is needed?
+    options:
+      - General Maintenance
+      - Plumbing
+      - Electrical
+      - HVAC
+      - Carpentry
+      - Other
+  validations:
+    required: true
+
+- type: dropdown
+  id: location
+  attributes:
+    label: Location (Building)
+    description: Select the building where the issue is located.
+    options:
+      - Station 1
+      - Station 2
+  validations:
+    required: true
+
+- type: input
+  id: room
+  attributes:
+    label: Specific location (room)
+    description: Where exactly is the issue (small bathroom, engine bay, kitchen, etc).
+
+- type: textarea
+  id: detailed-description
+  attributes:
+    label: Detailed Description of the Issue
+    description: Please provide a thorough explanation.
+  validations:
+    required: true
+
+- type: input
+  id: supporting-documents
+  attributes:
+    label: Supporting Documents (Optional)
+    description: Links to photos, videos, or other files (if applicable)
+
