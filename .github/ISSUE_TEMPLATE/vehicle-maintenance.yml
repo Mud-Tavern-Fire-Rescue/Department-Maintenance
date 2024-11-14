@@ -51,6 +51,7 @@ body:
       - Engine 3 (station 2)
       - Engine 4 (station 2)
       - Emergency Response Trailer (station 2)
+      - Gator UTV (station 1)
       - QRV
   validations:
     required: true
