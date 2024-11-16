@@ -2,7 +2,7 @@
 
 This repository can be used to track issues and maintenance for facilities and vehicles. 
 
-### Click "[Issues](https://github.com/Mud-Tavern-Fire-Rescue/Department-Maintenance/issues)" to make a request or track ongoing work. There are templates for vehicle requests, station requests, and vehicle check off lists. 
+### Click [Issues](https://github.com/Mud-Tavern-Fire-Rescue/Department-Maintenance/issues) to make a request or track ongoing work. There are templates for vehicle requests, station requests, and vehicle check off lists. 
 
 A bot will automatically generate a reminder to mow every roughly 8-12 days, depending on the month. 
 
