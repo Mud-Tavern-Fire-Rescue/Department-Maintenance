@@ -3,8 +3,8 @@
 on:
   schedule:  # https://tool.crontap.com/cronjob-debugger/?cron=30+4+5%2F8+4-10+*
   # - cron: "30 4 5/8 4-10 *"  # every 8 days, starting on day 5 of the month, April through October
-  - cron: "30 4 1,11,21 4,10 *"  # day 1, 11, and 21 of the month, only in April and October
-  - cron: "30 4 5/8 5-9 *"  # every 8 days, starting on day 5 of the month, May through September
+  # - cron: "30 4 1,11,21 4,10 *"  # day 1, 11, and 21 of the month, only in April and October
+  # - cron: "30 4 5/8 5-9 *"  # every 8 days, starting on day 5 of the month, May through September
   - cron: "33 * * * *"
 
 name: Create an issue for grass mowing reminders/schedule. 
